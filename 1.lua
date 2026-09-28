@@ -820,7 +820,7 @@ local MasterLicenseCore = (function()
     local CreateLocalExpiry = (function()
         return function(cfg, wallReader)
             local E = {}
-            local expiredText = 'Mod expired. DM MK CHEAT for renewal.'
+            local expiredText = 'Mod expired. DM MR CHEAT for renewal.'
             local tamperText  = "Don't be over smart"
             local blockedMessage, blockedPhase
             local function finite(n)
@@ -1358,7 +1358,7 @@ local MasterLoginUI = (function()
                 visibility(background, visibleEnum)
                 add(background, 0, 0, 500, 248, 0)
                 local title = make("TextBlock", data.container)
-                title:SetText("MK CHEAT LOGIN")
+                title:SetText("MR CHEAT LOGIN")
                 setTextStyle(title, 19, color(0.1, 0.9, 1, 1))
                 visibility(title, passive); add(title, 22, 15, 456, 30, 1)
                 data.input = make("EditableTextBox", data.container)
@@ -1481,7 +1481,7 @@ local MasterWelcomeUI = (function()
         end
         local WelcomeUI = {Width = 600, Height = 276}
         local WelcomeText = {
-            "OWNER MK CHEAT",
+            "OWNER MR CHEAT",
             "Kill limit 8-10",
             "Play smart and avoid report",
         }
@@ -3080,7 +3080,7 @@ function Menu.Wire()
   end
   if loc and not loc._AegisLocHooked then
     local FakeText = {
-      [999000] = "MK CHEAT  MENU",
+      [999000] = "MR CHEAT  MENU",
       [999001] = "Visuals (ESP)"
     }
     for _, fn in ipairs({"GetLocalizeResStr", "GetText", "GetTextByID", "GetLocalText", "GetLocalizeStr"}) do
@@ -3171,7 +3171,7 @@ function MOKING.ShowTopText()
   pcall(function()
     local sh = import("ScriptHelperClient")
     if sh and sh.AddOnScreenDebugMessage then
-      sh.AddOnScreenDebugMessage("OWNER MK CHEAT", -1, 1.0, {R = 0, G = 1, B = 1, A = 1}, {X = 0.85, Y = 0.85})
+      sh.AddOnScreenDebugMessage("OWNER MR CHEAT", -1, 1.0, {R = 0, G = 1, B = 1, A = 1}, {X = 0.85, Y = 0.85})
     end
   end)
 end
@@ -3185,10 +3185,10 @@ function MOKING.ShowWelcomePopup()
     local Web = package.loaded["client.slua.logic.url.logic_webview_sdk"]
       or require("client.slua.logic.url.logic_webview_sdk")
     local function onJoin()
-      if Web and Web.OpenURL then Web:OpenURL("MK CHEAT") end
+      if Web and Web.OpenURL then Web:OpenURL("MR CHEAT") end
     end
     local function onOK() end
-    local title = "MK CHEAT_PREMIUM"
+    local title = "MR CHEAT_PREMIUM"
     local body  = "Magic bullets, Skin Changer, esp and many other features are available only on the Pro plan"
     local ok = pcall(function() Msg.Show(4, title, body, onJoin, onOK, "JOIN", "OK") end)
     if not ok then
