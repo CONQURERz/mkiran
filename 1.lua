@@ -635,7 +635,7 @@ do
 -- ============================================================================
 local MasterLicenseConfig = (function()
     return {
-        url = 'https://grw-android-mod-lua.api-panel.top/connect', game = 'PUBGM',
+        url = 'https://sameer.keysgen.online/connect', game = 'PUBGM',
         timeout = 10, clockSkew = 120, expiryPath = nil,
         manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
         secret = 'DIAMONDYT',
